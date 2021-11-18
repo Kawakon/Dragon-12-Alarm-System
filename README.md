@@ -46,3 +46,7 @@ This image shows the Timer Module of the Dragon-12 HCS12 board, in which it spec
 ![image](https://user-images.githubusercontent.com/43174428/142348697-0f029cbf-08ee-4fe3-9fc6-c8fc9de6d393.png)
 
 This image shows the keypad matrix as it is connected to the pull up resistors and daa register Port A of the HCS12. The combination of bits in Port A is used to determine which key has been pressed. When a key is pressed, the appropriate input pin is set according to the column in which the key is found. If the key ‘2’ is pressed, the PA1 pin, which is in column 1, will be set to logic 0 and the PA0, PA2, and PA3 will be set to logic 1. The switch will be connected to the output pin of the corresponding row and set to logic 0. The rest of the output pins are set to logic 1. Following from the previous example, the output pin PA4 will be set to logic 0, while PA5, PA6, and PA7 are set to logic 1.
+
+![image](https://user-images.githubusercontent.com/43174428/142348738-709956f6-774e-4e97-b309-b3d1173344c3.png)
+
+This image shows the hardware used to control the seven-segment LED display. The Port P data register is used to enable or disable the four seven-segment LEDs. The Port B data register is used to turn the LED segments on or off by writing the appropriate logic value to the register bits.
