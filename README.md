@@ -20,7 +20,7 @@ being disarmed or set. The Timer Channels of the HCS12 microprocessor were used 
 This module handles all delay operations during the execution of the alarm system. For instance, a user may provide a keypad entry to arm/disarm the alarm system. During each key 
 press, the key pressed is displayed on the seven segment LED display, where there is a display between displayed digits. 
 
-###Segment Display Module
+### Segment Display Module
 
 This module receives the ASCII codes of the keypad presses and displays the value to one of the four seven-segment LED displays on the HCS12 development board. The module also clears
 the LED displays when they are not needed.
@@ -34,3 +34,11 @@ corresponding ASCII character.
 ### LCD Display Module
 
 This module prints characters to one of the two lines on the Dragon-12 board's LCD display. This module is used when printing the state of the alarm system for the user. 
+
+## Diagrams
+
+The following images depict the hardware components used to implement the alarm system modules:
+
+![image](https://user-images.githubusercontent.com/43174428/142348657-34340c01-1d94-407c-8eee-e3b271cd80d0.png)
+
+This image shows the Timer Module of the Dragon-12 HCS12 board, in which it specifies the registers used for the output-compare system. In this module, timer compare registers TCX (where X is a number from 0 to 7) are set with a value and compared to the timer counter (TCNT register) of the board. When the values of the register are equal, a timer interrupt is serviced, in which an action can be performed. This feature is used to implement the function in the above modules. 
