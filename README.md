@@ -1,7 +1,7 @@
 # Dragon-12-Alarm-System
 ## Emulation of Alarm System of Dragon-12 HCS12 Board with Assembly and C Programming
 
-In this project, the Dragon-12 HCS12 Development Board is used to design an alarm system implemented within a home with assembly code and C programming. The alarm system enables a 
+In this project, the Dragon-12 HCS12 Development Board is used to design an alarm system implemented within a home with assembly code and C programming. The development board uses a Freescale HC12 microcontroller. The alarm system enables a 
 user to set an alarm that can be triggered upon a button press and deactivated with a keypad entry. A LCD display prints the state of the alarm system (ARMED, ARMING, or DISARMED). 
 The main modules of the system include the Switches, Siren, Delay, Segment Display, Keypad, and LCD Display modules. 
 
